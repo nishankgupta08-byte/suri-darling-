@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Love Letter for Eid - A beautifully crafted romantic Eid greeting website">
+    <title>A Love Letter for Eid</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Particles / Hearts Container -->
+    <div id="particles-container"></div>
+
+    <!-- Hero Section -->
+    <header class="hero section-animate">
+        <div class="hero-content">
+            <h1 class="sparkle-text">A Love Letter for Eid</h1>
+            <p class="subtitle">May this Eid bring you endless joy, and this Eidi deliver all my love to you.</p>
+            <div class="decorative-divider">
+                <i class="fa-solid fa-heart align-center"></i>
+            </div>
+            <a href="#letter" class="btn-primary">Open My Heart</a>
+        </div>
+    </header>
+
+    <!-- Love Letter Section -->
+    <section id="letter" class="love-letter section-animate hidden-section">
+        <div class="paper-container">
+            <div class="paper-content">
+                <h2 class="letter-greeting">My Dearest,</h2>
+                <div class="typewriter-container">
+                    <p id="typewriter-text"></p>
+                </div>
+                <!-- Hidden original text for JS to read -->
+                <p id="original-text" style="display: none;">As the crescent moon graces the vibrant night sky, my heart
+                    turns completely to you.
+
+                    This little digital space is my special Eidi to you—a token of my deepest affection and admiration.
+                    I wanted to craft something timeless just like our love.
+
+                    May your days always be as bright as your smile, and your life as beautiful as your pure soul. I
+                    love you more than words could ever truly express, today, tomorrow, and forever.
+
+                    Eid Mubarak, my love!</p>
+                <div class="letter-signoff fade-in-delay">
+                    <p>With all my love,</p>
+                    <p class="signature">Suriyansh</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section class="gallery-section section-animate hidden-section">
+        <h2 class="gallery-title sparkle-text">Memories We Share</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-src="images/whatsapp_1.jpeg">
+                <img src="images/whatsapp_1.jpeg" alt="WhatsApp Image 1">
+                <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-src="images/whatsapp_2.jpeg">
+                <img src="images/whatsapp_2.jpeg" alt="WhatsApp Image 2">
+                <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-src="images/whatsapp_3.jpeg">
+                <img src="images/whatsapp_3.jpeg" alt="WhatsApp Image 3">
+                <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Enlarged lovely memory">
+        <div class="lightbox-nav">
+            <button id="prev-btn" class="nav-btn" aria-label="Previous image"><i
+                    class="fa-solid fa-chevron-left"></i></button>
+            <button id="next-btn" class="nav-btn" aria-label="Next image"><i
+                    class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3 class="footer-message">Happy Eid, My Love <i class="fa-solid fa-heart footer-heart"></i></h3>
+            <p class="glowing-text">Made with infinite love</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
